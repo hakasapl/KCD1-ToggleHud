@@ -11,6 +11,7 @@ public:
         INFOTEXT = 3,
         EVENTLOG = 4,
         HINTS = 5,
+        CURSOR = 7,
         WANTED = 9,
         TUTORIALMESSAGE = 11,
         QUESTEVENT = 12,
@@ -40,6 +41,9 @@ public:
         }
         if (str == "hints") {
             return KCD1Elements::HINTS;
+        }
+        if (str == "crosshair") {
+            return KCD1Elements::CURSOR;
         }
         if (str == "wanted") {
             return KCD1Elements::WANTED;
